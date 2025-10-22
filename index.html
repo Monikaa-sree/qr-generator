@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QR Generator by Monikaa Sree</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- QR library (Qrious) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-inner">
+      <h2 class="brand">Monikaa • QR Tools</h2>
+      <p class="subtitle">Clean · Fast · Shareable</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1 class="app-title">QR Code Generator</h1>
+
+    <div class="container">
+      <div class="qr-wrap">
+        <!-- canvas will be used by Qrious -->
+        <canvas id="qr-canvas" width="300" height="300" aria-hidden="true"></canvas>
+        <div class="qr-caption">Scan to open</div>
+      </div>
+
+      <div class="form">
+        <label for="text" class="label">Enter text or URL</label>
+        <input id="text" type="text" placeholder="https://your-link.com or any text" value="" />
+
+        <div class="buttons">
+          <button id="generateBtn" class="btn">Generate QR</button>
+          <button id="downloadBtn" class="btn secondary">Download PNG</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="note">Tip: Use a website URL or contact info for best results.</p>
+  </main>
+
+  <footer class="footer">
+    <p>Developed by <strong>Monikaa Sree</strong> • Built with HTML · CSS · JavaScript</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
